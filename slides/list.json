@@ -1,1 +1,10 @@
-["index.md"]
+[
+    [
+        "welcome/index.md",
+        "welcome/aaron-osher.md",
+        "welcome/get-the-slides.md"
+    ],
+    [
+        "rest.md"
+    ]
+]
