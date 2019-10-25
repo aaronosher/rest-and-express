@@ -1,0 +1,80 @@
+# Common config
+# For YAML support of anchors and references, @see http://blog.daemonl.com/2016/02/yaml.html
+
+common:
+  - &container_config
+    docker:
+      - image: aaronosher/yo-reveal-builder:latest
+    working_directory: ~/repo
+
+version: 2
+jobs:
+  checkout:
+    <<: *container_config
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "99:32:e5:63:ad:ab:77:77:25:b9:d1:3b:7f:b3:ef:69"
+      - checkout
+      - persist_to_workspace:
+          root: .
+          paths: ./*
+  install:
+    <<: *container_config
+    steps:
+      - attach_workspace:
+          at: .
+      - restore_cache:
+          keys:
+              - v1-dependencies-{{ checksum "package.json" }}
+              - v1-dependencies-
+      - run: npm ci
+      - run: bower install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: .
+          paths: ./*
+  build:
+    <<: *container_config
+    steps:
+      - attach_workspace:
+          at: .
+      - run: grunt dist
+      - persist_to_workspace:
+          root: .
+          paths: ./*
+  deploy:
+    <<: *container_config
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "99:32:e5:63:ad:ab:77:77:25:b9:d1:3b:7f:b3:ef:69"
+      - attach_workspace:
+          at: .
+      - run: echo "Host *" > ~/.ssh/config
+      - run: echo " StrictHostKeyChecking no" >> ~/.ssh/config
+      - run: echo " UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+      - run: git config --global user.name "CircleCI Deployment"
+      - run: git config --global user.email "4386583+aaronosher@users.noreply.github.com"
+      - run: grunt buildcontrol
+workflows:
+  version: 2
+  build_deploy:
+    jobs:
+      - checkout
+      - install:
+          requires:
+            - checkout
+      - build:
+          requires:
+            - install
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
