@@ -5,6 +5,9 @@
         "welcome/get-the-slides.md"
     ],
     [
-        "rest.md"
+        "rest/rest.md",
+        "rest/powers-the-internet.md",
+        "rest/apis.md",
+        "rest/resources.md"
     ]
 ]
