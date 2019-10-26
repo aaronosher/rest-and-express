@@ -23,6 +23,15 @@
         "getting-started/get-started.md",
         "getting-started/glitch.md",
         "getting-started/get-the-code.md",
-        "getting-started/remix.md"
+        "getting-started/remix.md",
+        "getting-started/postman.md"
+    ],
+    [
+        "basics/server.js.md",
+        "basics/imports.md",
+        "basics/route.md",
+        "basics/listener.md",
+        "basics/get-project-url.md",
+        "basics/open-in-postman.md"
     ]
 ]
