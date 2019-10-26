@@ -62,7 +62,18 @@
         "router/users.md",
         "router/tell-app.md",
         "router/try-in-postman.md",
+        "router/import-router.md",
         "router/url-params.md",
         "router/create-cars-router.md"
+    ],
+    [
+        "middleware/middleware.md",
+        "middleware/what.md",
+        "middleware/next.md",
+        "middleware/multiple.md",
+        "middleware/token.md",
+        "middleware/add-token.md",
+        "middleware/examples.md",
+        "middleware/json-body.md"
     ]
 ]
