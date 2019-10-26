@@ -73,7 +73,13 @@
         "middleware/multiple.md",
         "middleware/token.md",
         "middleware/add-token.md",
-        "middleware/examples.md",
-        "middleware/json-body.md"
-    ]
+        "middleware/examples.md"
+    ],
+    [
+        "cors/cors.md",
+        "cors/what.md",
+        "cors/install.md",
+        "cors/add.md"
+    ],
+    "thanks.md"
 ]
