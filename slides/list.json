@@ -2,12 +2,27 @@
     [
         "welcome/index.md",
         "welcome/aaron-osher.md",
-        "welcome/get-the-slides.md"
+        "welcome/get-the-slides.md",
+        "welcome/scope.md"
     ],
     [
         "rest/rest.md",
         "rest/powers-the-internet.md",
         "rest/apis.md",
         "rest/resources.md"
+    ],
+    [
+        "express/express.md",
+        "express/get-the-docs.md",
+        "express/what-can-it-do.md",
+        "express/static-files.md",
+        "express/html-rendering.md",
+        "express/advanced-routing.md"
+    ],
+    [
+        "getting-started/get-started.md",
+        "getting-started/glitch.md",
+        "getting-started/get-the-code.md",
+        "getting-started/remix.md"
     ]
 ]
