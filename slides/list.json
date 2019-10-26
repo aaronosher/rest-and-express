@@ -55,5 +55,14 @@
         "req-res-objects/res-send.md",
         "req-res-objects/res-status.md",
         "req-res-objects/res-json.md"
+    ],
+    [
+        "router/router.md",
+        "router/seperate.md",
+        "router/users.md",
+        "router/tell-app.md",
+        "router/try-in-postman.md",
+        "router/url-params.md",
+        "router/create-cars-router.md"
     ]
 ]
