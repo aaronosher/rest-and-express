@@ -33,5 +33,27 @@
         "basics/listener.md",
         "basics/get-project-url.md",
         "basics/open-in-postman.md"
+    ],
+    [
+        "instance-methods/methods.md",
+        "instance-methods/get.md",
+        "instance-methods/post.md",
+        "instance-methods/put.md",
+        "instance-methods/delete.md",
+        "instance-methods/METHOD.md",
+        "instance-methods/all.md",
+        "instance-methods/route.md",
+        "instance-methods/use.md"
+    ],
+    [
+        "req-res-objects/index.md",
+        "req-res-objects/request.md",
+        "req-res-objects/req-body.md",
+        "req-res-objects/req-params.md",
+        "req-res-objects/req-query.md",
+        "req-res-objects/response.md",
+        "req-res-objects/res-send.md",
+        "req-res-objects/res-status.md",
+        "req-res-objects/res-json.md"
     ]
 ]
