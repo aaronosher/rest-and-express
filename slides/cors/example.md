@@ -1,1 +1,1 @@
-![cors error](/resources/images/CorsError.png)
+![cors error](./resources/images/images/CorsError.png)
