@@ -78,8 +78,12 @@
     [
         "cors/cors.md",
         "cors/what.md",
+        "cors/example.md",
+        "cors/why.md",
         "cors/install.md",
-        "cors/add.md"
+        "cors/add.md",
+        "cors/fixed.md",
+        "cors/other-sites.md"
     ],
     "thanks.md"
 ]
