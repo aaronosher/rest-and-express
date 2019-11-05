@@ -1,0 +1,1 @@
+![cors error](/resources/images/CorsError.png)

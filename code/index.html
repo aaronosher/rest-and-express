@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Redirecting...</title>
+</head>
+<body>
+  Redirecting you to the Glitch project...
+  <p id="waiting"></p>
+  <script>
+    const glitch = "https://glitch.com/edit/#!/rest-and-express";
+
+    document.location = glitch;
+
+    setTimeout(() => document.querySelector('#waiting').innerHTML = `Click <a href="${glitch}>here</a> if you aren't redirected automatically.`, 800);
+  </script>
+</body>
+</html>

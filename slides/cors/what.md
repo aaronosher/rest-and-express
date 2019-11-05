@@ -1,0 +1,1 @@
+Cross-Origin Resource Sharing is a way of preventing cross-site request forgery

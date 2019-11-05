@@ -1,0 +1,1 @@
+You can separate resources into their own routers
