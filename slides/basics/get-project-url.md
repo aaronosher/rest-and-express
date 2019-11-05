@@ -1,3 +1,3 @@
 ## Get your Project URL
 
-![Gltich share screen](../resources/images/images/get-url.png)
+![Gltich share screen](../resources/images/get-url.png)
